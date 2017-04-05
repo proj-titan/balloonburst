@@ -13,3 +13,7 @@ machine:
 dependencies:
   pre:
     - pip install pygame
+
+test:
+  override:
+    - python ./mainapp.py
