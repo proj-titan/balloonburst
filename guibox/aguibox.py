@@ -5,10 +5,10 @@ class balloon():
     def __init__(self, transform):
         self.transform = transform
         self.obj = \
-            pygame.rect(transform, 10,10)
+            pygame.Rect(transform[0],transform[1], 10,10)
     #
     def draw(self, SURF):
-        pygame.draw.ellipse(SURF, 
+        pygame.draw.ellipse(SURF,
             (255, 255, 255),
             self.obj, 5)
     #

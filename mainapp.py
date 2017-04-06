@@ -2,7 +2,7 @@ import sys
 import pygame
 from random import *
 from pygame.locals import *
-import guibox/aguibox as GUI
+import guibox.aguibox as GUI
 pygame.init()
 DISPLAYX, DISPLAYY = 640, 480
 DISPLAYSURF = pygame.display.set_mode((DISPLAYX, DISPLAYY))
