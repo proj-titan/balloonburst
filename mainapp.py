@@ -28,6 +28,7 @@ def update():
     for looper in balloonList:
         newTransform = list(looper.transform)
         newTransform[1] -= 1 # NOTE: don't del this!
+        newTransform[1] -= int(gpoint / 5)
         looper.setTransform(newTransform)
         #looper.draw(DISPLAYSURF)
         DISPLAYSURF.blit(looper.obj, looper.transform)
@@ -41,6 +42,7 @@ def update():
             gpoint += 1
         if val.collider.y < 0:
             del balloonList[index]
+            gpoint -= 1
 
 while True:
     update()
