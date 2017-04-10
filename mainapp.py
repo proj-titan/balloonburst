@@ -40,6 +40,7 @@ def update():
         if val.collider.collidepoint(mpos):
             del balloonList[index]
             gpoint += 1
+            continue
         if val.collider.y < 0:
             del balloonList[index]
             gpoint -= 1
